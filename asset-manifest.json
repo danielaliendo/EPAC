@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/EPAC/static/css/main.2cbe5212.chunk.css",
-    "main.js": "/EPAC/static/js/main.b572840a.chunk.js",
-    "main.js.map": "/EPAC/static/js/main.b572840a.chunk.js.map",
-    "runtime-main.js": "/EPAC/static/js/runtime-main.b481d883.js",
-    "runtime-main.js.map": "/EPAC/static/js/runtime-main.b481d883.js.map",
+    "main.css": "/EPAC/static/css/main.79b4124f.chunk.css",
+    "main.js": "/EPAC/static/js/main.8abc06e9.chunk.js",
+    "main.js.map": "/EPAC/static/js/main.8abc06e9.chunk.js.map",
+    "runtime-main.js": "/EPAC/static/js/runtime-main.4834d177.js",
+    "runtime-main.js.map": "/EPAC/static/js/runtime-main.4834d177.js.map",
     "static/css/2.136a4374.chunk.css": "/EPAC/static/css/2.136a4374.chunk.css",
-    "static/js/2.00961329.chunk.js": "/EPAC/static/js/2.00961329.chunk.js",
-    "static/js/2.00961329.chunk.js.map": "/EPAC/static/js/2.00961329.chunk.js.map",
-    "static/js/3.4daf9307.chunk.js": "/EPAC/static/js/3.4daf9307.chunk.js",
-    "static/js/3.4daf9307.chunk.js.map": "/EPAC/static/js/3.4daf9307.chunk.js.map",
+    "static/js/2.89392624.chunk.js": "/EPAC/static/js/2.89392624.chunk.js",
+    "static/js/2.89392624.chunk.js.map": "/EPAC/static/js/2.89392624.chunk.js.map",
+    "static/js/3.6bd4e49b.chunk.js": "/EPAC/static/js/3.6bd4e49b.chunk.js",
+    "static/js/3.6bd4e49b.chunk.js.map": "/EPAC/static/js/3.6bd4e49b.chunk.js.map",
     "index.html": "/EPAC/index.html",
     "static/css/2.136a4374.chunk.css.map": "/EPAC/static/css/2.136a4374.chunk.css.map",
-    "static/css/main.2cbe5212.chunk.css.map": "/EPAC/static/css/main.2cbe5212.chunk.css.map",
-    "static/js/2.00961329.chunk.js.LICENSE.txt": "/EPAC/static/js/2.00961329.chunk.js.LICENSE.txt",
+    "static/css/main.79b4124f.chunk.css.map": "/EPAC/static/css/main.79b4124f.chunk.css.map",
+    "static/js/2.89392624.chunk.js.LICENSE.txt": "/EPAC/static/js/2.89392624.chunk.js.LICENSE.txt",
     "static/media/2012 (1).7609a748.jpg": "/EPAC/static/media/2012 (1).7609a748.jpg",
     "static/media/2012 (2).ac859065.jpg": "/EPAC/static/media/2012 (2).ac859065.jpg",
     "static/media/2012 (3).e12fc208.png": "/EPAC/static/media/2012 (3).e12fc208.png",
@@ -52,10 +52,10 @@
     "static/media/vision-empresa.400ba4c6.jpg": "/EPAC/static/media/vision-empresa.400ba4c6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b481d883.js",
+    "static/js/runtime-main.4834d177.js",
     "static/css/2.136a4374.chunk.css",
-    "static/js/2.00961329.chunk.js",
-    "static/css/main.2cbe5212.chunk.css",
-    "static/js/main.b572840a.chunk.js"
+    "static/js/2.89392624.chunk.js",
+    "static/css/main.79b4124f.chunk.css",
+    "static/js/main.8abc06e9.chunk.js"
   ]
 }
