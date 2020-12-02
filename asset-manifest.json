@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/EPAC/static/css/main.79b4124f.chunk.css",
-    "main.js": "/EPAC/static/js/main.8abc06e9.chunk.js",
-    "main.js.map": "/EPAC/static/js/main.8abc06e9.chunk.js.map",
-    "runtime-main.js": "/EPAC/static/js/runtime-main.4834d177.js",
-    "runtime-main.js.map": "/EPAC/static/js/runtime-main.4834d177.js.map",
+    "main.css": "/EPAC/static/css/main.72d354a4.chunk.css",
+    "main.js": "/EPAC/static/js/main.7eb887e5.chunk.js",
+    "main.js.map": "/EPAC/static/js/main.7eb887e5.chunk.js.map",
+    "runtime-main.js": "/EPAC/static/js/runtime-main.a056711a.js",
+    "runtime-main.js.map": "/EPAC/static/js/runtime-main.a056711a.js.map",
     "static/css/2.136a4374.chunk.css": "/EPAC/static/css/2.136a4374.chunk.css",
-    "static/js/2.89392624.chunk.js": "/EPAC/static/js/2.89392624.chunk.js",
-    "static/js/2.89392624.chunk.js.map": "/EPAC/static/js/2.89392624.chunk.js.map",
-    "static/js/3.6bd4e49b.chunk.js": "/EPAC/static/js/3.6bd4e49b.chunk.js",
-    "static/js/3.6bd4e49b.chunk.js.map": "/EPAC/static/js/3.6bd4e49b.chunk.js.map",
+    "static/js/2.3e9ed188.chunk.js": "/EPAC/static/js/2.3e9ed188.chunk.js",
+    "static/js/2.3e9ed188.chunk.js.map": "/EPAC/static/js/2.3e9ed188.chunk.js.map",
+    "static/js/3.aaa00fa0.chunk.js": "/EPAC/static/js/3.aaa00fa0.chunk.js",
+    "static/js/3.aaa00fa0.chunk.js.map": "/EPAC/static/js/3.aaa00fa0.chunk.js.map",
     "index.html": "/EPAC/index.html",
     "static/css/2.136a4374.chunk.css.map": "/EPAC/static/css/2.136a4374.chunk.css.map",
-    "static/css/main.79b4124f.chunk.css.map": "/EPAC/static/css/main.79b4124f.chunk.css.map",
-    "static/js/2.89392624.chunk.js.LICENSE.txt": "/EPAC/static/js/2.89392624.chunk.js.LICENSE.txt",
+    "static/css/main.72d354a4.chunk.css.map": "/EPAC/static/css/main.72d354a4.chunk.css.map",
+    "static/js/2.3e9ed188.chunk.js.LICENSE.txt": "/EPAC/static/js/2.3e9ed188.chunk.js.LICENSE.txt",
     "static/media/2012 (1).7609a748.jpg": "/EPAC/static/media/2012 (1).7609a748.jpg",
     "static/media/2012 (2).ac859065.jpg": "/EPAC/static/media/2012 (2).ac859065.jpg",
     "static/media/2012 (3).e12fc208.png": "/EPAC/static/media/2012 (3).e12fc208.png",
@@ -41,6 +41,8 @@
     "static/media/2019 (1).e4c7089c.jpg": "/EPAC/static/media/2019 (1).e4c7089c.jpg",
     "static/media/2019 (2).63c246b3.jpg": "/EPAC/static/media/2019 (2).63c246b3.jpg",
     "static/media/2019 (3).7573da8a.jpg": "/EPAC/static/media/2019 (3).7573da8a.jpg",
+    "static/media/Manual alumbrado publico - 2018.7d724263.pdf": "/EPAC/static/media/Manual alumbrado publico - 2018.7d724263.pdf",
+    "static/media/Manual alumbrado publico - 2018.f3c852fa.png": "/EPAC/static/media/Manual alumbrado publico - 2018.f3c852fa.png",
     "static/media/Manual.c3b45add.pdf": "/EPAC/static/media/Manual.c3b45add.pdf",
     "static/media/ManualInstaladorElectricistaCategoriaIIISegundaEdicion.fef37cb8.jpg": "/EPAC/static/media/ManualInstaladorElectricistaCategoriaIIISegundaEdicion.fef37cb8.jpg",
     "static/media/bannerNovedades-01.c3d61ea7.png": "/EPAC/static/media/bannerNovedades-01.c3d61ea7.png",
@@ -48,14 +50,16 @@
     "static/media/bannerNovedades-03.bf68c3b3.png": "/EPAC/static/media/bannerNovedades-03.bf68c3b3.png",
     "static/media/bannerTorre.5fe91c19.jpg": "/EPAC/static/media/bannerTorre.5fe91c19.jpg",
     "static/media/courses-01.d056907d.jpg": "/EPAC/static/media/courses-01.d056907d.jpg",
+    "static/media/mission.b8847b0d.jpg": "/EPAC/static/media/mission.b8847b0d.jpg",
+    "static/media/objetive.cc98d103.jpg": "/EPAC/static/media/objetive.cc98d103.jpg",
     "static/media/tesla banner slider.9a3ba565.jpg": "/EPAC/static/media/tesla banner slider.9a3ba565.jpg",
-    "static/media/vision-empresa.400ba4c6.jpg": "/EPAC/static/media/vision-empresa.400ba4c6.jpg"
+    "static/media/view.04ca633e.jpg": "/EPAC/static/media/view.04ca633e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4834d177.js",
+    "static/js/runtime-main.a056711a.js",
     "static/css/2.136a4374.chunk.css",
-    "static/js/2.89392624.chunk.js",
-    "static/css/main.79b4124f.chunk.css",
-    "static/js/main.8abc06e9.chunk.js"
+    "static/js/2.3e9ed188.chunk.js",
+    "static/css/main.72d354a4.chunk.css",
+    "static/js/main.7eb887e5.chunk.js"
   ]
 }
