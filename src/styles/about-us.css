@@ -1,0 +1,13 @@
+.about-us-container {
+    margin: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro-container {
+    /* align-items: center; */
+    /* text-align: center; */
+    width: 75%;
+}

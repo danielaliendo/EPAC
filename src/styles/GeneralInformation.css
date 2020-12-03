@@ -1,0 +1,33 @@
+.generalInformation .infoCards {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.containerChips {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infoCards .card {
+    /* border-left: 4px solid #ef962d; */
+    width: 30%;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 8px;
+}
+
+
+.infoCards .card  h5 {
+    margin: 10px 20px;
+    font-size: large;
+    font-weight: 600;
+    color: #434343;
+}
+
+.infoCards .card .chip {
+    margin-bottom: 5px;
+}

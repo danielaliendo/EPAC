@@ -1,0 +1,232 @@
+.coursesDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: calc(100% - 68px);
+    background-color: #f7f7f7;
+}
+
+.box {
+    width: 100%;
+    background-color: #e7e6e7;
+
+}
+
+.colorBox {
+    color: #434343;
+    padding: 30px 20px;
+}
+
+.infoBox {
+    width: 100%;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.infoBox .info {
+    padding: 35px 0;
+    height: fit-content;
+    width: 90%;
+    border-bottom: 1px solid #c3c1c3;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.myChip {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 200px;
+    margin: 0 10px;
+}
+
+.myChip p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.myChipContent {
+    margin-left: 5px;
+}
+
+.myChipContent .myChipTitle {
+    margin-bottom: 5px;
+}
+
+.myChip svg {
+    font-size: xx-large;
+}
+
+.body {
+    background-color: inherit;
+
+    width: 90%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.body article {
+    padding: 35px 20px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+article div h3 {
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    font-size: x-large;
+    color: #434343;
+}
+
+.body aside {
+    padding: 35px 20px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.line {
+    width: 90%;
+    border-bottom: 1px solid #c3c1c3;
+    margin: 15px 0;
+}
+
+.aside {
+    width: 100%;
+}
+
+.temary .module {
+    padding: 10px;
+    width: 90%;
+    border: 1px solid #c3c1c3;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.module .title {
+    margin: 10px;
+}
+
+.module ul {
+    padding: 0;
+    margin-left: 10px;
+}
+
+.blocks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.blockTitle {
+    background-color: #eaeaea;
+    border-radius: 8px 8px 0 0;
+    padding: 5px 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockTitle h4 {
+    margin-left: 10px;
+    color: #616161;
+    font-weight: 400;
+}
+
+.blockText {
+    border-radius: 0 0 8px 8px;
+    padding: 15px 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background: white;
+}
+
+.blockText ul {
+    padding: 0;
+}
+
+.sizeMedium {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    margin: 10px;
+}
+
+.center {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.centerText {
+    word-wrap: break-word;
+}
+
+.coursesDetailsNon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailsSlider {
+    width: 100%;
+    height: 275px;
+}
+
+.detailsSlider img {
+    width: 100%;
+    height: 100%;
+}
+
+.transparent-slider {
+    width: 100%;
+    top: 65px;
+    height: 275px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+}
+
+.transparent-slider  h1 {
+    color: white;
+}

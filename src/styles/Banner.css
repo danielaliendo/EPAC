@@ -1,0 +1,44 @@
+.bannerImg {
+    width: 100%;
+    height: 500px;
+}
+
+.banner {
+    position: relative;
+    height: 500px;
+}
+
+.bannerCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bannerCard {
+    margin-left: 50px;
+    max-width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bcTitle {
+    margin: 0;
+    font-size: xx-large;
+}
+
+.bcText {
+    font-size: x-large;
+}
+
+.transparentBanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.144);
+    width: 100%;
+    height: 500px;
+}

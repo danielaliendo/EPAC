@@ -1,0 +1,38 @@
+.allConferences {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.conference {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    width: 85%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin: 0 10px 10px 10px;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+
+.conference-date {
+    text-align: center;
+    width: 30%;
+    color: #da251c;
+    margin-right: 20px;
+}
+
+.conference-title {
+    width: 70%;
+    color: #434343;
+}
+
+.containerConferencesCards {
+    height: 53%;
+}

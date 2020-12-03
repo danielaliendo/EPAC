@@ -1,0 +1,77 @@
+.ns {
+    margin: 0;
+    padding: 0;
+}
+
+.containerFooter {
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+    background-color: #434343;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+}
+
+.containerFooter .columnFooter {
+    width: 260px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.columnFooter h5 {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.columnFooter p {
+    line-height: 20px;
+}
+
+.iconsFooter {
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconsFooter svg {
+ padding: 0 5px;
+}
+
+.prueba {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardsFooter {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.copyright {
+    width: 80%;
+    border-top: 1px solid white;
+}
+
+.copyright p {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}

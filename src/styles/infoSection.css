@@ -1,0 +1,8 @@
+.container-infoSection {
+    max-height: 250px;
+    width: 30%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+}

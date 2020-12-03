@@ -1,0 +1,137 @@
+.containerDescription {
+    max-height: 80px;
+    min-height: 80px;
+    /* border: 1px solid red; */
+    height: 100%;
+    padding: 10px;
+}
+
+.containerTitle {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-footer {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #afafaf;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 5px;
+    width: 90%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button-footer span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-footer span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button-footer:hover span {
+    padding-right: 15px;
+  }
+  
+  .button-footer:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .button-footer a {
+    color: white;
+  }
+
+  .dot___3c3SI {
+    background-color: #afafaf;
+    width: 8px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .carousel__dot--selected {
+      background-color: #da251c;
+  }
+
+  .carousel__dot-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .buttonNext___2mOCa {
+      background: transparent;
+      border: none;
+  }
+
+  .carousel__next-button {
+    background: transparent;
+    border: none;
+  }
+
+  .buttonFirst___2rhFr {
+    background: transparent;
+    border: none;
+  }
+
+  .carousel__first-button {
+    background: transparent;
+    border: none;
+  }
+
+  .div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .anotherCourses {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 20px;
+  }
+
+  .containerCard {
+      position: relative;
+  }
+
+
+  .subtitleCursosCards {
+    width: fit-content;
+    padding: 20px 10px;
+    margin-left: 60px;
+  }
+
+  .subtitleCursosCards h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: x-large;
+    font-weight: 100;
+  }
+
+    .border {
+        width: 50%;
+        height: 2px;
+        background-color: #da251c;
+    }

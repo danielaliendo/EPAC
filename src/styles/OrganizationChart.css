@@ -1,0 +1,111 @@
+.cardOC {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+    margin: 5px;
+}
+
+.titleOC {
+    letter-spacing: 4px;
+    background-color: #c5c5c5;
+    height: 30%;
+    border-radius: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.titleOC p {
+    font-weight: 600;
+    padding-top: 15px;
+    padding: 0;
+    color: white;
+}
+
+.avatarOC {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    background-color: white;
+    border: 5px solid #f1f1f1;
+}
+
+.cardOC p {
+    margin-left: 140px;
+    margin-bottom: 8px;
+}
+
+.contentOC {
+    height: 70%;
+    background-color: #f1f1f1;
+}
+
+.contentOC p {
+    line-height: 20px;
+    padding-top: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.secondary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.separator {
+    margin: 15px 0;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.separator .line {
+    width: 80%;
+    height: 2px;
+    position: relative;
+    background-color: #c5c5c5;
+}
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: #c5c5c5;
+    border-radius: 100%;
+}
+
+.littlePoint {
+    width: 15px;
+    height: 15px;
+    background-color: #c5c5c5;
+    border-radius: 100%;
+}
+
+.pointLeft {
+    position: absolute;
+    top: -7px;
+    left: 0;
+}
+
+.pointRight {
+    position: absolute;
+    top: -7px;
+    right: 0;
+}
+
+.pointCenter {
+    position: absolute;
+    top: -9px;
+    left: 49%;
+}
+
+.subTitle {
+    margin-top: 30px;
+}
