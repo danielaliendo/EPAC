@@ -1,21 +1,14 @@
 import React from 'react';
 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonFirst, ButtonLast, DotGroup, ImageWithZoom, } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
 import { courses } from "./Courses";
-import "./../styles/Example.css";
-import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import "./../styles/SliderCoursesCards.css";
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-
 import Typography from '@material-ui/core/Typography';
 import { useHistory } from "react-router-dom";
-
-import IconButton from '@material-ui/core/IconButton';
-import { ArrowForwardIos, ArrowBackIos } from '@material-ui/icons';
 import Chip from '@material-ui/core/Chip';
-import Zoom from '@material-ui/core/Zoom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -146,7 +139,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SliderCoursesCards() {
 
-    const listProximoLanzamiento = courses.filter(item => item.estado === "Próximo lanzamiento")
     const listEnCurso = courses.filter(item => item.estado === "En curso")
     const listFinalizado = courses.filter(item => item.estado === "Finalizado")
 
@@ -157,142 +149,61 @@ export default function SliderCoursesCards() {
         history.push(`/Cursos/${id}`, { curso: curso })
     }
     return (
-        <div className="cnt">
-            <div className="flxBxCntr">
-                <div class="cnt-title">
-                    <h2 className="title">Cursos</h2>
-                    <div class="border">
-                    </div>
+        <div className="anotherCourses">
+
+            {listEnCurso.map((curso, key) =>
+                <div className="containerCard">
+
+                    <Card key={key} className={classes.root}>
+                        <CardContent className={classes.cardArea}>
+                            <div className="containerTitle">
+
+                                <Typography className={classes.title} gutterBottom variant="h5" component="h2">
+                                    {curso.titulo}
+                                </Typography>
+                            </div>
+
+                            <div className="containerDescription">
+                                <Typography className={classes.description} variant="body2" color="textSecondary" component="p">
+                                    {curso.destinatarios}
+                                </Typography>
+                            </div>
+                        </CardContent>
+                        <CardActions className={classes.cardActions}>
+                            <button className="button-footer" onClick={() => historyPush(curso.id, curso)}>
+                                <span>Ver mas</span>
+                            </button>
+                        </CardActions>
+                    </Card>
+                    <Chip className={`${classes.chipState} ${classes.chipInCurse}`} size="small" label="En curso" />
                 </div>
-            </div>
-            <div className="subtitleCursosCards">
-                <h2>Próximos lanzamientos</h2>
-                <div className="border"></div>
-            </div>
-            <CarouselProvider
-                className={`${classes.carousel} ${classes.flexBoxCenter}`}
-                visibleSlides={4}
-                totalSlides={listProximoLanzamiento.length}
-                step={1}
-                naturalSlideWidth={400}
-                naturalSlideHeight={500}
+            )}
+            {listFinalizado.map((curso, key) =>
+                <div className="containerCard">
 
-            >
-                <Slider className={classes.slider}>
-                    {listProximoLanzamiento.map((curso, key) =>
-                        <>
-                            <Slide index={key} className="slide">
-                                <Card className={classes.root}>
-                                    <CardContent className={classes.cardArea}>
-                                        <div className="containerTitle">
+                    <Card key={key} className={classes.root}>
+                        <CardContent className={classes.cardArea}>
+                            <div className="containerTitle">
+                                <Typography className={classes.title} gutterBottom variant="h5" component="h2">
+                                    {curso.titulo}
+                                </Typography>
+                            </div>
 
-                                            <Typography className={classes.title} gutterBottom variant="h5" component="h2">
-                                                {curso.titulo}
-                                            </Typography>
-                                        </div>
-
-                                        <div className="containerDescription">
-                                            <Typography className={classes.description} variant="body2" color="textSecondary" component="p">
-                                                {curso.destinatarios}
-                                            </Typography>
-                                        </div>
-                                    </CardContent>
-                                    <CardActions className={classes.cardActions}>
-                                        <button className="button-footer" onClick={() => historyPush(curso.id, curso)}>
-                                            <span>Ver mas</span>
-                                        </button>
-                                    </CardActions>
-                                </Card>
-                            </Slide>
-                            {curso.titulo === "Instalador electricista categoría III" && <Chip className={`${classes.chipState} ${classes.chipOtherAuthor}`} size="small" label="Autorizado por Ersep" />}
-                        </>
-
-                    )}
-                </Slider>
-
-                <DotGroup />
-
-                <ButtonNext className={classes.buttonNext}>
-                    <IconButton className={classes.buttonSliderRight} aria-label="delete">
-                        <ArrowForwardIos />
-                    </IconButton>
-                </ButtonNext>
-
-                <ButtonFirst className={classes.buttonFirst}>
-                    <IconButton className={classes.buttonSliderLeft} aria-label="delete">
-                        <ArrowBackIos />
-                    </IconButton>
-                </ButtonFirst>
-
-            </CarouselProvider>
-
-            <div className="subtitleCursosCards">
-                <h2>Otros</h2>
-                <div className="border"></div>
-            </div>
-            {/* <div className="box">
-                <div className="colorBox"></div>
-            </div> */}
-            <div className="div">
-                <div className="anotherCourses">
-
-                    {listEnCurso.map((curso, key) =>
-                        <div className="containerCard">
-
-                            <Card key={key} className={classes.root}>
-                                <CardContent className={classes.cardArea}>
-                                    <div className="containerTitle">
-
-                                        <Typography className={classes.title} gutterBottom variant="h5" component="h2">
-                                            {curso.titulo}
-                                        </Typography>
-                                    </div>
-
-                                    <div className="containerDescription">
-                                        <Typography className={classes.description} variant="body2" color="textSecondary" component="p">
-                                            {curso.destinatarios}
-                                        </Typography>
-                                    </div>
-                                </CardContent>
-                                <CardActions className={classes.cardActions}>
-                                    <button className="button-footer" onClick={() => historyPush(curso.id, curso)}>
-                                        <span>Ver mas</span>
-                                    </button>
-                                </CardActions>
-                            </Card>
-                            <Chip className={`${classes.chipState} ${classes.chipInCurse}`} size="small" label="En curso" />
-                        </div>
-                    )}
-                    {listFinalizado.map((curso, key) =>
-                        <div className="containerCard">
-
-                            <Card key={key} className={classes.root}>
-                                <CardContent className={classes.cardArea}>
-                                    <div className="containerTitle">
-                                        <Typography className={classes.title} gutterBottom variant="h5" component="h2">
-                                            {curso.titulo}
-                                        </Typography>
-                                    </div>
-
-                                    <div className="containerDescription">
-                                        <Typography className={classes.description} variant="body2" color="textSecondary" component="p">
-                                            {curso.destinatarios}
-                                        </Typography>
-                                    </div>
-                                </CardContent>
-                                <CardActions className={classes.cardActions}>
-                                    <button className="button-footer" onClick={() => historyPush(curso.id, curso)}>
-                                        <span>Ver mas</span>
-                                    </button>
-                                </CardActions>
-                            </Card>
-                            <Chip className={`${classes.chipState} ${classes.chipFinished}`} size="small" label="Finalizado" />
-                        </div>
-                    )}
+                            <div className="containerDescription">
+                                <Typography className={classes.description} variant="body2" color="textSecondary" component="p">
+                                    {curso.destinatarios}
+                                </Typography>
+                            </div>
+                        </CardContent>
+                        <CardActions className={classes.cardActions}>
+                            <button className="button-footer" onClick={() => historyPush(curso.id, curso)}>
+                                <span>Ver mas</span>
+                            </button>
+                        </CardActions>
+                    </Card>
+                    <Chip className={`${classes.chipState} ${classes.chipFinished}`} size="small" label="Finalizado" />
                 </div>
-            </div>
-
+            )}
         </div>
-
     );
 }

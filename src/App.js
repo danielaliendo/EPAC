@@ -14,7 +14,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Header from "./components/Header";
-import CursosCards from './components/CursosCards';
+import CursosCards from './components/courses/CursosCards';
 import CoursesDetails from './components/coursesDetails/CoursesDetails';
 import Conferences from './components/Conferences';
 import CharlasCards from './components/CharlasCards';
