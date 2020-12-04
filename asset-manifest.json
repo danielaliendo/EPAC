@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/EPAC/static/css/main.1afe3c81.chunk.css",
-    "main.js": "/EPAC/static/js/main.cb680e6d.chunk.js",
-    "main.js.map": "/EPAC/static/js/main.cb680e6d.chunk.js.map",
-    "runtime-main.js": "/EPAC/static/js/runtime-main.a056711a.js",
-    "runtime-main.js.map": "/EPAC/static/js/runtime-main.a056711a.js.map",
+    "main.css": "/EPAC/static/css/main.c61dd11d.chunk.css",
+    "main.js": "/EPAC/static/js/main.0c750732.chunk.js",
+    "main.js.map": "/EPAC/static/js/main.0c750732.chunk.js.map",
+    "runtime-main.js": "/EPAC/static/js/runtime-main.bc6df1b4.js",
+    "runtime-main.js.map": "/EPAC/static/js/runtime-main.bc6df1b4.js.map",
     "static/css/2.136a4374.chunk.css": "/EPAC/static/css/2.136a4374.chunk.css",
-    "static/js/2.ea0f8123.chunk.js": "/EPAC/static/js/2.ea0f8123.chunk.js",
-    "static/js/2.ea0f8123.chunk.js.map": "/EPAC/static/js/2.ea0f8123.chunk.js.map",
-    "static/js/3.aaa00fa0.chunk.js": "/EPAC/static/js/3.aaa00fa0.chunk.js",
-    "static/js/3.aaa00fa0.chunk.js.map": "/EPAC/static/js/3.aaa00fa0.chunk.js.map",
+    "static/js/2.07207407.chunk.js": "/EPAC/static/js/2.07207407.chunk.js",
+    "static/js/2.07207407.chunk.js.map": "/EPAC/static/js/2.07207407.chunk.js.map",
+    "static/js/3.01040adb.chunk.js": "/EPAC/static/js/3.01040adb.chunk.js",
+    "static/js/3.01040adb.chunk.js.map": "/EPAC/static/js/3.01040adb.chunk.js.map",
     "index.html": "/EPAC/index.html",
     "static/css/2.136a4374.chunk.css.map": "/EPAC/static/css/2.136a4374.chunk.css.map",
-    "static/css/main.1afe3c81.chunk.css.map": "/EPAC/static/css/main.1afe3c81.chunk.css.map",
-    "static/js/2.ea0f8123.chunk.js.LICENSE.txt": "/EPAC/static/js/2.ea0f8123.chunk.js.LICENSE.txt",
+    "static/css/main.c61dd11d.chunk.css.map": "/EPAC/static/css/main.c61dd11d.chunk.css.map",
+    "static/js/2.07207407.chunk.js.LICENSE.txt": "/EPAC/static/js/2.07207407.chunk.js.LICENSE.txt",
     "static/media/2012 (1).7609a748.jpg": "/EPAC/static/media/2012 (1).7609a748.jpg",
     "static/media/2012 (2).ac859065.jpg": "/EPAC/static/media/2012 (2).ac859065.jpg",
     "static/media/2012 (3).e12fc208.png": "/EPAC/static/media/2012 (3).e12fc208.png",
@@ -46,18 +46,16 @@
     "static/media/bannerNovedades-01.c3d61ea7.png": "/EPAC/static/media/bannerNovedades-01.c3d61ea7.png",
     "static/media/bannerNovedades-02.4f872823.png": "/EPAC/static/media/bannerNovedades-02.4f872823.png",
     "static/media/bannerNovedades-03.bf68c3b3.png": "/EPAC/static/media/bannerNovedades-03.bf68c3b3.png",
-    "static/media/bannerTorre.5fe91c19.jpg": "/EPAC/static/media/bannerTorre.5fe91c19.jpg",
     "static/media/courses-01.d056907d.jpg": "/EPAC/static/media/courses-01.d056907d.jpg",
     "static/media/mission.b8847b0d.jpg": "/EPAC/static/media/mission.b8847b0d.jpg",
     "static/media/objetive.cc98d103.jpg": "/EPAC/static/media/objetive.cc98d103.jpg",
-    "static/media/tesla banner slider.9a3ba565.jpg": "/EPAC/static/media/tesla banner slider.9a3ba565.jpg",
     "static/media/view.04ca633e.jpg": "/EPAC/static/media/view.04ca633e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a056711a.js",
+    "static/js/runtime-main.bc6df1b4.js",
     "static/css/2.136a4374.chunk.css",
-    "static/js/2.ea0f8123.chunk.js",
-    "static/css/main.1afe3c81.chunk.css",
-    "static/js/main.cb680e6d.chunk.js"
+    "static/js/2.07207407.chunk.js",
+    "static/css/main.c61dd11d.chunk.css",
+    "static/js/main.0c750732.chunk.js"
   ]
 }
