@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         padding: '15px 78px',
         marginBottom: '20px',
+        fontFamily: "'Raleway', sans-serif",
+        textTransform: 'capitalize',
+        fontSize: 'large'
     },
 }));
 const ButtonInscription = ({ handleClickOpen, curso }) => {

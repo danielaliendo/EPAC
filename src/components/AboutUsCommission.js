@@ -10,7 +10,9 @@ const AboutUsCommision = () => {
                 <div class="border">
                 </div>
             </div>
-            <OrganizationChart />
+            <div className="cnt-content">
+                <OrganizationChart />
+            </div>
         </div>
     );
 }

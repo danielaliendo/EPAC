@@ -34,7 +34,7 @@ const GeneralInformation = ({ curso }) => {
         <>
             {information
                 ?
-                <article>
+                <article className="cntArticle">
                     {curso.destinatarios &&
                         <div className="center">
                             <h3>Destinatarios:</h3>
@@ -68,7 +68,7 @@ const GeneralInformation = ({ curso }) => {
                         </div>}
                 </article>
                 :
-                <article>
+                <article className="cntArticle">
                     <div className="center" style={{display: 'flex', alignItems: 'center', justifyContent: 'center',
                 height: '100%'}}>
                         <Chip

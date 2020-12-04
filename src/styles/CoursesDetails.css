@@ -12,7 +12,6 @@
 .box {
     width: 100%;
     background-color: #e7e6e7;
-
 }
 
 .colorBox {
@@ -181,7 +180,7 @@ article div h3 {
 }
 
 .sizeMedium {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.00938em;
@@ -229,4 +228,56 @@ article div h3 {
 
 .transparent-slider  h1 {
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .myChipContent .myChipTitle {
+        margin-bottom: 0;
+    }
+
+    .myChip {
+        margin: 0;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .infoBox .infoChip {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .cntDetails {
+        flex-wrap: wrap;
+    }
+
+    .cntAside {
+        width: 100% !important;
+    }
+
+    .cntArticle {
+        width: 100% !important;
+    }
+
+    .temary .module {
+        width: 100%;
+    }
+
+    .body .cntAside {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .body .cntArticle {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .sizeMedium {
+        font-weight: 500;
+        font-size: medium;
+    }
+
+    .module ul li {
+        list-style-type: none;
+    }
 }

@@ -15,7 +15,7 @@ const Library = () => {
 
     const classes = useStyles();
     return (
-        <div className="cnt containerLibrary">
+        <div className="cnt flxBxClumn containerLibrary">
             <div className="flxBxCntr">
                 <div class="cnt-title">
                     <h2 className="title">Biblioteca</h2>
@@ -23,7 +23,7 @@ const Library = () => {
                     </div>
                 </div>
             </div>
-            <div className="libraryBody">
+            <div className="cnt-content libraryBody">
 
                 {
                     books.map((book, key) =>

@@ -20,7 +20,7 @@ const Aside = ( { curso } ) => {
     const [secondary, setSecondary] = React.useState(false);
 
     return (
-        <aside>
+        <aside className="cntAside">
             <div className="aside">
                 <ButtonInscription curso={curso} handleClickOpen={handleClickOpen} open={open}/>
                 <ModalButtonInscription curso={curso} handleClose={handleClose} open={open} />

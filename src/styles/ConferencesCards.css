@@ -34,5 +34,5 @@
 }
 
 .containerConferencesCards {
-    height: 53%;
+    min-height: 53%;
 }

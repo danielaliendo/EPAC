@@ -18,7 +18,7 @@ const CoursesDetails = () => {
             <Slider curso={ curso } />
             <div className="box colorBox" />
             <ChipsInformation curso={ curso }/>
-            <div className="body">
+            <div className="body cntDetails">
                 <GeneralInformation curso={ curso } />
                 <Aside curso={ curso } />
             </div>
