@@ -18,38 +18,20 @@ const tutorialSteps = [
     imgPath: imagen,
     id: 'courses',
   },
-  {
-    imgPath: imgNotes,
-    id: 'notes',
-  },
-  {
-    id: 'legislation',
-    imgPath: imgLegislation,
-  },
+  // {
+  //   imgPath: imgNotes,
+  //   id: 'notes',
+  // },
+  // {
+  //   id: 'legislation',
+  //   imgPath: imgLegislation,
+  // },
 ];
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     maxWidth: '100%',
-  },
-  img: {
-    height: 422,
-    maxWidth: 400,
-    display: 'block',
-    overflow: 'hidden',
-    width: '100%',
-    maxWidth: '100%',
-  },
-  cntSlider: {
-    position: 'relative'
-  },
-  info: {
-    color: 'white',
-    fontFamily: "'Raleway', sans-serif",
-    position: 'absolute',
-    top: 50,
-    left: 10,
   },
   button: {
     letterSpacing: '1px',
@@ -60,17 +42,6 @@ const useStyles = makeStyles((theme) => ({
     width: '300px',
     height: '50px',
     margin: '20px',
-  },
-  p: {
-    maxWidth: 475,
-    margin: 15,
-    fontSize: 'xx-large',
-    fontWeight: '400',
-  },
-  title: {
-    fontSize: 'xx-large',
-    fontWeight: 600,
-    maxWidth: '80%',
   },
   bxCard: {
     width: "250px",
@@ -111,27 +82,31 @@ const AutoViewBanner = () => {
         enableMouseEvents
       >
         {tutorialSteps.map((step, index) => (
-          <div className={classes.cntSlider} key={step.label}>
+          <div className="cntSlider" key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
               <>
-                <img className={classes.img} src={step.imgPath} alt={step.label} />
+                <img className="img" src={step.imgPath} alt={step.label} />
 
                 {step.id === 'courses' &&
-                  <div className={classes.info}>
-                    <h3 className={classes.title}>INSCRIBITE HOY
-                    A NUESTROS CURSOS</h3>
-                    <p className={classes.p}>
-                      Aprende un oficio de la mano de nuestros mejores profesionales <br />
-                    </p>
-                    <Link className={classes.link} to="./Cursos">
-                      <Button
-                        className={classes.button}
-                        variant="outlined"
-                        color='secondary'
-                      >
-                        Conocé nuestros cursos
-                      </Button>
-                    </Link>
+                  <div className="info">
+                    <div>
+                      <h3 className="infoTitle">INSCRIBITE HOY
+                      A NUESTROS CURSOS</h3>
+                      <p className="p">
+                        Aprende un oficio de la mano de nuestros mejores profesionales <br />
+                      </p>
+                    </div>
+                    <idv>
+                      <Link className={classes.link} to="./Cursos">
+                        <Button
+                          className={classes.button}
+                          variant="outlined"
+                          color='secondary'
+                        >
+                          Conocé nuestros cursos
+                        </Button>
+                      </Link>
+                    </idv>
                   </div>}
                 {step.id === 'notes' &&
                   <div className={classes.info} style={{ top: 65 }}>
