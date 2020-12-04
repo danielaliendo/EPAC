@@ -49,7 +49,7 @@ function App() {
             <Route path="/principios">
               <AboutUsValues />
             </Route>
-            <Route path="/contact">
+            <Route path="/Contacto">
               <Contact />
             </Route>
             <Route basename={url} exact path="/Cursos">

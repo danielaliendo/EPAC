@@ -30,14 +30,11 @@ nav {
     color: white;
 }
 
-.containerNav .itemMenu {
+.itemMenu {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     text-decoration: none;
     text-align: center;
-    padding: 10px 15px;
-    border-radius: 8px;
-    color: white;
 }
 
 .containerNav li {
@@ -77,10 +74,18 @@ nav {
 
 .itemSubMenu {
     font-family: 'Raleway', sans-serif;
-    text-align: center;
-    max-width: 150px;
-   width: 150px;
-    text-decoration: none;
-    color: #da251c;
-    padding: 0 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .menuDrawer {
+      display:  block!important;
+    }
+
+    .cnt-popper {
+        display: none;
+    }
+  }

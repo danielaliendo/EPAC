@@ -1,9 +1,4 @@
 import React, { useEffect } from 'react';
-
-// COMPONENTES
-import Slider from "./Slider";
-import ContainerCards from "./ContainerCards";
-import Contents from "./Contents";
 import { useLocation, useHistory } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
@@ -12,9 +7,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import "../styles/home.css";
-
 import Buttons from './Buttons';
-import Banner from './Banner';
 import AutoViewBanner from './../components/autoViewBanner/AutoViewBanner';
 
 const Home = () => {
@@ -35,7 +28,7 @@ const Home = () => {
     }, [location.search])
 
     return (
-        <>
+        <div className="cnt">
             <Dialog
                 open={open}
                 onClose={handleClose}
@@ -54,22 +47,9 @@ const Home = () => {
                     </Button>
                 </DialogActions>
             </Dialog>
-            {/* <Slider />
-            <div>
-                <h2>
-                Impulsa tu carrera profesional
-                con nuestros cursos
-                </h2>
-            </div>
-            <div className="container-description-contents">
-                <ContainerCards />
-                <Contents />
-            </div> */}
             <AutoViewBanner />
-            {/* <img className="bannerImg" src={imagen}/> */}
             <Buttons />
-            {/* <Banner /> */}
-        </>
+        </div>
     );
 }
 
