@@ -127,6 +127,9 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 75px',
         height: '242px',
         width: '90%',
+        [theme.breakpoints.down('sm')]: {
+            width: '79%',
+        },
         '& div': {
             height: "100%",
             // background: "red",
