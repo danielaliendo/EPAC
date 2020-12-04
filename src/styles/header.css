@@ -80,12 +80,20 @@ nav {
    text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-    .menuDrawer {
-      display:  block!important;
-    }
+.cnt-header {
+    height: 65px;
+}
 
+@media only screen and (max-width: 600px) {
     .cnt-popper {
         display: none;
     }
-  }
+
+    .normal {
+        display: none;
+    }
+
+    .menuDrawer {
+        display:  block!important;
+      }
+}

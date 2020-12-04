@@ -18,14 +18,14 @@ const tutorialSteps = [
     imgPath: imagen,
     id: 'courses',
   },
-  // {
-  //   imgPath: imgNotes,
-  //   id: 'notes',
-  // },
-  // {
-  //   id: 'legislation',
-  //   imgPath: imgLegislation,
-  // },
+  {
+    imgPath: imgNotes,
+    id: 'notes',
+  },
+  {
+    id: 'legislation',
+    imgPath: imgLegislation,
+  },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -108,38 +108,48 @@ const AutoViewBanner = () => {
                       </Link>
                     </idv>
                   </div>}
+
                 {step.id === 'notes' &&
-                  <div className={classes.info} style={{ top: 65 }}>
-                    <h3 className={classes.title}>ARTÍCULOS</h3>
-                    <p className={classes.p}>
-                      En nuestra sección de artículos podrás encontrar información elaborada por nuestro equipo <br />
-                    </p>
-                    <Link className={classes.link} to="./Articulos">
-                      <Button
-                        className={classes.button}
-                        variant="outlined"
-                        color='secondary'
-                      >
-                        Ver más
-                      </Button>
-                    </Link>
+
+                  <div className="info">
+                    <div>
+                      <h3 className="infoTitle">ARTÍCULOS</h3>
+                      <p className="p">
+                        En nuestra sección de artículos podrás encontrar información elaborada por nuestro equipo <br />
+                      </p>
+                    </div>
+                    <idv>
+                      <Link className={classes.link} to="./Articulos">
+                        <Button
+                          className={classes.button}
+                          variant="outlined"
+                          color='secondary'
+                        >
+                          Ver más
+                        </Button>
+                      </Link>
+                    </idv>
                   </div>
                 }
                 {step.id === 'legislation' &&
-                  <div className={classes.info} style={{ top: 30 }}>
-                    <h3 className={classes.title}>LEGISLACIÓN Y REGLAMENTACIONES</h3>
-                    <p className={classes.p}>
+                <div className="info">
+                    <div>
+                      <h3 className="infoTitle">LEGISLACIÓN VIGENTE</h3>
+                      <p className="p">
                       En esta sección podrás ver y descargar las leyes y reglamentaciones vigentes en Córdoba<br />
-                    </p>
-                    <Link className={classes.link} to="./Legislación-y-reglamentaciones">
-                      <Button
-                        className={classes.button}
-                        variant="outlined"
-                        color='secondary'
-                      >
-                        Ver más
-                      </Button>
-                    </Link>
+                      </p>
+                    </div>
+                    <idv>
+                      <Link className={classes.link} to="./Legislación-y-reglamentaciones">
+                        <Button
+                          className={classes.button}
+                          variant="outlined"
+                          color='secondary'
+                        >
+                          Ver más
+                        </Button>
+                      </Link>
+                    </idv>
                   </div>
                 }
               </>

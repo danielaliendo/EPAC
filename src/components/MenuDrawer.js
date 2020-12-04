@@ -190,7 +190,7 @@ export default function PersistentDrawerRight() {
                     {[{ name: 'Inicio', to: '/' }, { name: 'Institucional' }, { name: 'Contacto', to: '/Contacto' }].map((item, index) => (
                         <Link className="itemMenu" to={item.to} key={index}>
                             {item.name !== "Institucional" &&
-                                <Link onClick={handleClose} className="itemMenu" to="/historia">
+                                <Link onClick={handleClose} className="itemMenu" to={item.to}>
                                     <MenuItem className={classes.menuItem}>
                                         {item.name}
                                     </MenuItem>

@@ -93,82 +93,88 @@ const Header = () => {
     }, [open]);
 
     return (
-        <>
-            <AppBar
-                position="fixed"
-                className={clsx(classes.appBar, {
-                    [classes.appBarShift]: open,
-                })}
-            >
-                <Toolbar className={classes.toolBar}>
-                    <Link className="container-logo" to="/">
-                        <img src="https://i.ibb.co/Vvwk6Dw/logo.png" />
-                    </Link>
-                    <div className={classes.toolBarItems}>
-                        <Link className="itemMenu" to="/">
-                            <MenuItem className={classes.menuItem}>
-                                Inicio
-                            </MenuItem>
+        <div className="cnt-header">
+            <div className="normal">
+                <AppBar
+                    position="fixed"
+                    className={clsx(classes.appBar, {
+                        [classes.appBarShift]: open,
+                    })}
+                >
+                    <Toolbar className={classes.toolBar}>
+                        <Link className="container-logo" to="/">
+                            <img src="https://i.ibb.co/Vvwk6Dw/logo.png" />
                         </Link>
+                        <div className={classes.toolBarItems}>
+                            <Link className="itemMenu" to="/">
+                                <MenuItem className={classes.menuItem}>
+                                    Inicio
+                            </MenuItem>
+                            </Link>
 
-                        <Link
-                            className="itemMenu"
-                            ref={anchorRef}
-                            aria-controls={open ? 'menu-list-grow' : undefined}
-                            aria-haspopup="true"
-                            onClick={handleToggle}
-                        >
-                            <MenuItem className={classes.menuItem}>
-                                Institucional
+                            <Link
+                                className="itemMenu"
+                                ref={anchorRef}
+                                aria-controls={open ? 'menu-list-grow' : undefined}
+                                aria-haspopup="true"
+                                onClick={handleToggle}
+                            >
+                                <MenuItem className={classes.menuItem}>
+                                    Institucional
                             </MenuItem>
-                        </Link>
+                            </Link>
 
-                        <Link className="itemMenu" to="/Contacto">
-                            <MenuItem className={classes.menuItem}>
-                                Contacto
+                            <Link className="itemMenu" to="/Contacto">
+                                <MenuItem className={classes.menuItem}>
+                                    Contacto
                             </MenuItem>
-                        </Link>
-                        <MenuItem className="menuDrawer" style={{ display: "none" }}>
-                            <MenuDrawer />
-                        </MenuItem>
-                    </div>
-                </Toolbar>
-            </AppBar>
-            <div className="cnt-popper">
-                <Popper className={classes.popper} open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
-                    {({ TransitionProps, placement }) => (
-                        <Grow
-                            {...TransitionProps}
-                            style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-                        >
-                            <Paper>
-                                <ClickAwayListener onClickAway={handleClose}>
-                                    <div className={classes.toolBarItems}>
-                                        <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                                            <Link onClick={handleClose} className="itemSubMenu" to="/historia">
-                                                <MenuItem className={classes.menuSubItem}>
-                                                    Historia
+                            </Link>
+
+                        </div>
+                    </Toolbar>
+                </AppBar>
+                <div className="cnt-popper">
+                    <Popper className={classes.popper} open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+                        {({ TransitionProps, placement }) => (
+                            <Grow
+                                {...TransitionProps}
+                                style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+                            >
+                                <Paper>
+                                    <ClickAwayListener onClickAway={handleClose}>
+                                        <div className={classes.toolBarItems}>
+                                            <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                                                <Link onClick={handleClose} className="itemSubMenu" to="/historia">
+                                                    <MenuItem className={classes.menuSubItem}>
+                                                        Historia
                                             </MenuItem>
-                                            </Link>
-                                            <Link onClick={handleClose} className="itemSubMenu" to="/comision">
-                                                <MenuItem className={classes.menuSubItem}>
-                                                    Comisión
+                                                </Link>
+                                                <Link onClick={handleClose} className="itemSubMenu" to="/comision">
+                                                    <MenuItem className={classes.menuSubItem}>
+                                                        Comisión
                                             </MenuItem>
-                                            </Link>
-                                            <Link onClick={handleClose} className="itemSubMenu" to="/principios">
-                                                <MenuItem className={classes.menuSubItem}>
-                                                    Principios
+                                                </Link>
+                                                <Link onClick={handleClose} className="itemSubMenu" to="/principios">
+                                                    <MenuItem className={classes.menuSubItem}>
+                                                        Principios
                                             </MenuItem>
-                                            </Link>
-                                        </MenuList>
-                                    </div>
-                                </ClickAwayListener>
-                            </Paper>
-                        </Grow>
-                    )}
-                </Popper>
+                                                </Link>
+                                            </MenuList>
+                                        </div>
+                                    </ClickAwayListener>
+                                </Paper>
+                            </Grow>
+                        )}
+                    </Popper>
+                </div>
             </div>
-        </>
+            <div className="anormal">
+                <MenuItem className="menuDrawer" style={{ display: "none" }}>
+                    <MenuDrawer />
+                </MenuItem>
+            </div>
+
+        </div>
     );
 }
 

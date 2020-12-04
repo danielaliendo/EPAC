@@ -14,10 +14,7 @@ body {
 }
 
 .cnt {
-  margin-top: 65px;
-  margin-top: 65px;
   width: 100%;
-  /* padding: 20px 0; */
 }
 
 .flxBxCntr {
@@ -73,4 +70,8 @@ body {
 
 .flxWrp {
   flex-wrap: wrap;
+}
+
+.mrgnTp {
+  margin-top: 20px,
 }

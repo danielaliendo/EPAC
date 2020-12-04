@@ -14,7 +14,7 @@ const CoursesDetails = () => {
     const { curso } = state;
 
     return (
-        <div className="coursesDetails">
+        <div className="coursesDetails mrgnTp">
             <Slider curso={ curso } />
             <div className="box colorBox" />
             <ChipsInformation curso={ curso }/>

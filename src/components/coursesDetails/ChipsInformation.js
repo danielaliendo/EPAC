@@ -37,7 +37,7 @@ return (
     {courseInformation
         ?
         <div className="infoBox">
-            <div className="info">
+            <div className="infoChip">
                 {curso.duracion_del_curso.inicio_del_curso && curso.duracion_del_curso.fin_del_curso
                     ? <div className="myChip">
                         <DateRangeOutlined className={classes.iconBox} />
@@ -81,7 +81,7 @@ return (
         </div>
         :
         <div className="infoBox">
-            <div className="info">
+            <div className="infoChip">
                 <Chip
                     className={classes.chipModule}
                     icon={<ErrorIcon />}
