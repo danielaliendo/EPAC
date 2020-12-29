@@ -146,8 +146,9 @@ export default function SliderCoursesCards() {
     const history = useHistory()
 
     const historyPush = (id, curso) => {
-        history.push(`/Cursos/${id}`, { curso: curso })
+        history.push(`/cursos/${id}`, { curso: curso })
     }
+    
     return (
         <div className="anotherCourses">
 

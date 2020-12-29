@@ -1,15 +1,13 @@
 import React from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import theme  from './components/configStyles';
+import theme from './components/configStyles';
 import './styles/App.css';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 
 // COMPONENTES
-import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -24,58 +22,61 @@ import AboutUsCommission from './components/AboutUsCommission';
 import AboutUsValues from './components/AboutUsValues';
 import Articles from './components/Articles';
 import Legislation from './components/Legislation';
-const url = '/EPAC/'
+import ScrollToToP from './components/ScrollToTop';
+
+import { Router } from "react-router";
+import { createBrowserHistory } from "history";
+
+const history = createBrowserHistory();
 
 function App() {
-    
+
   return (
     <MuiThemeProvider theme={theme}>
       <div className="App">
-        <Router exact basename={url}>
-              <Header />
+        <Router history={ history }>
+          <ScrollToToP />
+          <Header />
           <Switch>
-            <Route basename={url} exact path="/">
+            <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/about-us">
-              <AboutUs />
-            </Route>
-            <Route path="/historia">
+            <Route exact path="/historia">
               <AboutUsHistory />
             </Route>
-            <Route path="/comision">
+            <Route exact path="/comision">
               <AboutUsCommission />
             </Route>
-            <Route path="/principios">
+            <Route exact path="/principios">
               <AboutUsValues />
             </Route>
-            <Route path="/Contacto">
+            <Route exact path="/contacto">
               <Contact />
             </Route>
-            <Route basename={url} exact path="/Cursos">
+            <Route exact path="/cursos">
               <CursosCards />
             </Route>
-            <Route path="/Conferencias">
+            <Route exact path="/conferencias">
               <Conferences />
             </Route>
-            <Route path="/charlas">
+            <Route exact path="/charlas">
               <CharlasCards />
             </Route>
-            <Route path="/Biblioteca">
+            <Route exact path="/biblioteca">
               <Library />
             </Route>
-            <Route path="/Articulos">
+            <Route exact path="/articulos">
               <Articles />
             </Route>
-            <Route path="/Legislación-y-reglamentaciones">
+            <Route exact path="/legislación-y-reglamentaciones">
               <Legislation />
             </Route>
-            <Route basename={url} exact path="/Cursos/:id">
+            <Route exact path="/cursos/:id">
               <CoursesDetails />
             </Route>
           </Switch>
           <Footer />
-      </Router>
+        </Router>
       </div>
     </MuiThemeProvider>
   );

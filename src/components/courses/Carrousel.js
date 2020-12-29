@@ -88,6 +88,9 @@ const useStyles = makeStyles((theme) => ({
             bottom: '-35px',
             right: '33px',
         },
+        [theme.breakpoints.up('sm')]: {
+            right: '-50px',
+        },
     },
     buttonSliderLeft: {
         margin: '5px',
@@ -99,6 +102,9 @@ const useStyles = makeStyles((theme) => ({
             top: 'initial',
             bottom: '-35px',
             left: '33px',
+        },
+        [theme.breakpoints.up('sm')]: {
+            left: '-50px',
         },
     },
     extendedIcon: {
@@ -128,7 +134,7 @@ const useStyles = makeStyles((theme) => ({
         height: '242px',
         width: '90%',
         [theme.breakpoints.down('sm')]: {
-            width: '79%',
+            width: '76%',
         },
         '& div': {
             height: "100%",
@@ -142,7 +148,11 @@ const useStyles = makeStyles((theme) => ({
                     height: '100%',
                 }
             }
-        }
+        },
+        [theme.breakpoints.up('sm')]: {
+            width: '100%',
+
+        },
     },
     flexBoxCenter: {
         display: 'flex',
@@ -172,7 +182,7 @@ const Carrousel = () => {
     const history = useHistory()
 
     const historyPush = (id, curso) => {
-        history.push(`/Cursos/${id}`, { curso: curso })
+        history.push(`/cursos/${id}`, { curso: curso })
     }
 
     const listProximoLanzamiento = courses.filter(item => item.estado === "Próximo lanzamiento")

@@ -3,8 +3,12 @@
     padding: 0;
 }
 
+.footerLink {
+    color: white;
+    text-decoration: none;
+}
+
 .containerFooter {
-    margin-top: 20px;
     width: 100%;
     height: fit-content;
     background-color: #434343;

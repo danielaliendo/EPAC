@@ -5,6 +5,7 @@ import { commission } from './dbCommission';
 export default function OrganizationChart() {
 
 
+
     return (
         <>
             <div className="secondary">
@@ -45,6 +46,43 @@ export default function OrganizationChart() {
                 </div>
             </div>
 
+            <div className="secondary">
+                <div className="cardOC">
+                    <div className="titleOC">
+                        <p>Secretario</p>
+                    </div>
+                    <div className="contentOC">
+                        <p>
+                            {commission.secretario.nombreCompleto} <br />
+                            DNI: {commission.secretario.nroDNI} <br />
+                            Vigencia: {commission.secretario.vigencia.desde} al {commission.secretario.vigencia.hasta}
+                        </p>
+                    </div>
+                    <div className="avatarOC">
+
+                    </div>
+                </div>
+                <div className="cardOC">
+                    <div className="titleOC">
+                        <p>Tesorero</p>
+                    </div>
+                    <div className="contentOC">
+                        <p>
+                            {commission.tesorero.nombreCompleto} <br />
+                            DNI: {commission.tesorero.nroDNI} <br />
+                            Vigencia: {commission.tesorero.vigencia.desde} al {commission.tesorero.vigencia.hasta}
+                        </p>
+                    </div>
+                    <div className="avatarOC" />
+                </div>
+            </div>
+            <div className="separator">
+                <div className="line">
+                    <div className="littlePoint pointLeft" />
+                    <div className="point pointCenter" />
+                    <div className="littlePoint pointRight" />
+                </div>
+            </div>
             <div className="secondary">
                 {commission.vocales.titulares.map((vocalTitular, key) =>
                     <div className="cardOC" key={key}>

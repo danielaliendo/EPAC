@@ -11,7 +11,7 @@ const Articles = () => {
                 </div>
             </div>
 
-            <div className="articles flxBxClumn">
+            <div className="cnt-content articles flxBxClumn">
                 <div className="article">
                     <h3 className="art-title">
                         La energía y su diferencial

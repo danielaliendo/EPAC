@@ -3,8 +3,11 @@ import "../styles/Footer.css";
 import IconButton from '@material-ui/core/IconButton';
 import { Instagram, Facebook, Twitter } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
+import {
+    Link
+} from "react-router-dom";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   buttonIcon: {
       padding: 5,
       color: 'white'
@@ -19,11 +22,11 @@ const Footer = () => {
                 <div className="cardsFooter">
                     <div className="columnFooter">
                         <h5 className="ns">Asociación</h5>
-                        <p className="ns">
-                            Historia <br />
-                            Comisión directiva <br />
-                            Principios corporativos <br />
-                        </p>
+                            <ul className="ns">
+                                <Link className="footerLink" to="historia"><li>Historia</li></Link>
+                                <Link className="footerLink" to="comision"><li>Comisión directiva</li></Link>
+                                <Link className="footerLink" to="principios"><li>Principios corporativos</li></Link>
+                            </ul>
                     </div>
                     <div className="columnFooter">
                         <h5 className="ns">Contactanos</h5>

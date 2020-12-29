@@ -36,18 +36,21 @@
 }
 
 .cardOC p {
-    margin-left: 140px;
+    margin-left: 130px;
     margin-bottom: 8px;
+
 }
 
 .contentOC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 70%;
     background-color: #f1f1f1;
 }
 
 .contentOC p {
     line-height: 20px;
-    padding-top: 15px;
     margin-top: 0;
     margin-bottom: 0;
 }

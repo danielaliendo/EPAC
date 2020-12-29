@@ -124,7 +124,7 @@ const Header = () => {
                             </MenuItem>
                             </Link>
 
-                            <Link className="itemMenu" to="/Contacto">
+                            <Link className="itemMenu" to="/contacto">
                                 <MenuItem className={classes.menuItem}>
                                     Contacto
                             </MenuItem>

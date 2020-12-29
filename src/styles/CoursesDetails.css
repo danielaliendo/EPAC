@@ -131,6 +131,10 @@ article div h3 {
     margin-left: 10px;
 }
 
+.module ul li {
+    list-style-type: none;
+}
+
 .blocks {
     width: 100%;
     display: flex;

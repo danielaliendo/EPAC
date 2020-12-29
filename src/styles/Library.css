@@ -6,10 +6,11 @@
 .libraryBody {
     width: 100%;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .book {
@@ -36,4 +37,10 @@
 .bookTitle {
     margin-top: 0em;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .book {
+        width: 100%
+    }
 }

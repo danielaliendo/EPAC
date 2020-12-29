@@ -6,7 +6,6 @@ body {
 }
 
 .title {
-  /* text-align: center; */
   font-size: xx-large;
   font-weight: 700;
   color: #434343;
@@ -32,7 +31,8 @@ body {
 
 .cnt-title {
   width: fit-content;
-  padding: 20px 10px;
+  padding: 30px 10px;
+  padding-top: 50px;
 }
 
 .cnt-title .border {
@@ -66,6 +66,7 @@ body {
 .cnt-content {
   width: 90%;
   max-width: 90%;
+  padding-bottom: 30px;
 }
 
 .flxWrp {
@@ -74,4 +75,14 @@ body {
 
 .mrgnTp {
   margin-top: 20px,
+}
+
+@media only screen and (max-width: 600px) {
+  .cnt-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }

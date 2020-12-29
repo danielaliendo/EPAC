@@ -58,7 +58,7 @@ export const courses = [
                 actividad: 'Ejercitación practica'
             },
         ],
-        id: 'Auxiliar-electricista-domiciliario'
+        id: 'auxiliar-electricista-domiciliario'
     },
     {
         img: Imagen,
@@ -115,7 +115,7 @@ export const courses = [
                 contenido: [],
             },
         ],
-        id: 'Instalador-electricista-categoría-III'
+        id: 'instalador-electricista-categoría-III'
     },
     {
         img: Imagen,
@@ -180,7 +180,7 @@ export const courses = [
                 contenido: ["Objetos avanzados - plano unifilar de circuitos, plantas, etc."],
             },
         ],
-        id: 'AutoCAD-para-electricistas'
+        id: 'autoCAD-para-electricistas'
     },
     {
         img: Imagen,
@@ -246,7 +246,7 @@ export const courses = [
                 actividad: 'Trabajos prácticos'
             },
         ],
-        id: 'Puntos-de-conexión'
+        id: 'puntos-de-conexión'
     },
     {
         img: Imagen,
@@ -315,7 +315,7 @@ export const courses = [
                 ],
             },
         ],
-        id: 'Auxiliar-instalador-electricista-industrial',
+        id: 'auxiliar-instalador-electricista-industrial',
     },
     {
         img: Imagen,
@@ -376,7 +376,7 @@ export const courses = [
                 contenido: ['Leyes y reglamentaciones nacionales de generación de energía renovable'],
             },
         ],
-        id: 'Instalación-solar-fotovoltaica',
+        id: 'instalación-solar-fotovoltaica',
     },
     {
         img: Imagen,
@@ -438,7 +438,7 @@ export const courses = [
                 actividad: 'Ejercitación practica'
             },
         ],
-        id: 'Entorno-electromagnético-para-la-informática-y-telecomunicación',
+        id: 'entorno-electromagnético-para-la-informática-y-telecomunicación',
     },
     {
         img: Imagen,
@@ -496,7 +496,7 @@ export const courses = [
                 contenido: ['Presentación de informe: captura y registro de gráficos, interpretación de variables, conclusiones del informe.'],
             },
         ],
-        id: 'Instrumental-y-mediciones-eléctricas',
+        id: 'instrumental-y-mediciones-eléctricas',
     },
     {
         img: Imagen,
@@ -561,7 +561,7 @@ export const courses = [
                 contenido: ['Ley de SHL, resolución 900/2014 - SRT, resoluciones de ERSeP'],
             },
         ],
-        id: 'Puesta-a-tierra-y-medición-atmosférica',
+        id: 'puesta-a-tierra-y-medición-atmosférica',
     },
     {
         img: Imagen,
@@ -618,7 +618,7 @@ export const courses = [
                 contenido: [],
             },
         ],
-        id: 'Electrónica-industrial',
+        id: 'electrónica-industrial',
     },
     {
         img: Imagen,
@@ -676,6 +676,6 @@ export const courses = [
                 contenido: [],
             },
         ],
-        id: 'Capacitación-a-empresas',
+        id: 'capacitación-a-empresas',
     },
 ]

@@ -34,7 +34,7 @@ const Buttons = () => {
             <Link
                 className={classes.link}
                 style={{ backgroundColor: '#3737d1' }}
-                to="/Cursos"
+                to="/cursos"
             >
                 <Button className={classes.button}
                     case="Sentence case">
@@ -47,7 +47,7 @@ const Buttons = () => {
             <Link
                 className={classes.link}
                 style={{ backgroundColor: '#fb4f4f' }}
-                to="/Biblioteca"
+                to="/biblioteca"
             >
                 <Button className={classes.button}
                 case="Sentence case">
@@ -59,7 +59,7 @@ const Buttons = () => {
             <Link
                 className={classes.link}
                 style={{ backgroundColor: '#3bc29a' }}
-                to="/Conferencias"
+                to="/conferencias"
             >
                 <Button className={classes.button}
                 case="Sentence case">
