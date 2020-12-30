@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { useLocation } from 'react-router-dom';
-
+import { Alert, AlertTitle } from '@material-ui/lab';
 import InscriptionFrom from './InscriptionForm';
 
 const useStyles = makeStyles((theme) => ({
@@ -58,7 +58,7 @@ function getStepContent(step) {
   }
 }
 
-export default function VerticalLinearStepper() {
+export default function VerticalLinearStepper({ handleClose }) {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
@@ -71,26 +71,42 @@ export default function VerticalLinearStepper() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-  };
-
+  // const handleReset = () => {
+  //   setActiveStep(0);
+  // };
+  
   const { state } = useLocation()
   const { curso } = state;
-  console.log(curso)
+  
+  const courseCost = curso.precio_del_curso.regular.valor_inscripcion !== '' && curso.precio_del_curso.regular.saldo.cuotas.cantidad_de_cuotas !== '' && curso.precio_del_curso.regular.saldo.cuotas.valor_de_cuotas !== '' 
+
   return (
     <div className={classes.root}>
       <div className="subtitleCursosCards" style={{ marginLeft: 0 }}>
         <h2>Inscripión al curso</h2>
         <div className="border"></div>
       </div>
-      <p style={{ padding: '0 5px 10px 10px' }}>
-        <strong>Costo del curso:</strong> <br />
-        <ul>
-          <li style={{ listStyleType: 'disc' }}>Inscripión: ${curso.precio_del_curso.regular.valor_inscripcion}</li>
-  <li style={{ listStyleType: 'disc' }}>Saldo: {curso.precio_del_curso.regular.saldo.cuotas.cantidad_de_cuotas} cuota/s de ${curso.precio_del_curso.regular.saldo.cuotas.valor_de_cuotas}</li>
-        </ul>
-      </p>
+      <div style={{ padding: '0 5px 10px 10px' }}>
+        {courseCost 
+        ?
+        <>
+          <Alert severity="info">
+            Información importante
+          </Alert>
+          <div>            
+          <h4>Costo del curso</h4>
+          <p>
+            <ul>
+              <li style={{ listStyleType: 'disc' }}>Inscripión: ${curso.precio_del_curso.regular.valor_inscripcion}</li>
+              <li style={{ listStyleType: 'disc' }}>Saldo: {curso.precio_del_curso.regular.saldo.cuotas.cantidad_de_cuotas} cuota/s de ${curso.precio_del_curso.regular.saldo.cuotas.valor_de_cuotas}</li>
+            </ul>
+          </p>
+          </div>
+        </>
+        :
+        <Alert severity="warning">Información no disponible</Alert>
+        }
+      </div>
       <Stepper className={classes.stepper} activeStep={activeStep} orientation="vertical">
         {steps.map((label, index) => (
           <Step key={label}>
@@ -109,12 +125,14 @@ export default function VerticalLinearStepper() {
                   <Button
                     variant="contained"
                     color="primary"
-                    onClick={handleNext}
+                    onClick={activeStep === steps.length - 1
+                      ? handleClose
+                      : handleNext}
                     className={classes.button}
                     type="submit"
                   >
                     {activeStep === steps.length - 1
-                      ? 'Finalizar'
+                      ? 'Salir'
                       : 'Siguiente'}
 
                   </Button>

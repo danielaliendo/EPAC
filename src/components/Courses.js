@@ -67,11 +67,11 @@ export const courses = [
         estado: 'Próximo lanzamiento',
         precio_del_curso: {
             regular: {
-                valor_inscripcion: null,
+                valor_inscripcion: '2000',
                 saldo: {
                     cuotas: {
-                        cantidad_de_cuotas: null,
-                        valor_de_cuotas: null
+                        cantidad_de_cuotas: '3',
+                        valor_de_cuotas: '2000',
                     }
                 }
             },
@@ -385,11 +385,11 @@ export const courses = [
         estado: 'Próximo lanzamiento',
         precio_del_curso: {
             regular: {
-                valor_inscripcion: '1',
+                valor_inscripcion: '2000',
                 saldo: {
                     cuotas: {
-                        cantidad_de_cuotas: '1',
-                        valor_de_cuotas: '1'
+                        cantidad_de_cuotas: '3',
+                        valor_de_cuotas: '2000',
                     }
                 }
             },
@@ -447,11 +447,11 @@ export const courses = [
         estado: 'Próximo lanzamiento',
         precio_del_curso: {
             regular: {
-                valor_inscripcion: '1',
+                valor_inscripcion: '2000',
                 saldo: {
                     cuotas: {
-                        cantidad_de_cuotas: '1',
-                        valor_de_cuotas: '1'
+                        cantidad_de_cuotas: '3',
+                        valor_de_cuotas: '2000',
                     }
                 }
             },
@@ -505,11 +505,11 @@ export const courses = [
         estado: 'Próximo lanzamiento',
         precio_del_curso: {
             regular: {
-                valor_inscripcion: '1',
+                valor_inscripcion: '2000',
                 saldo: {
                     cuotas: {
-                        cantidad_de_cuotas: '1',
-                        valor_de_cuotas: '1'
+                        cantidad_de_cuotas: '3',
+                        valor_de_cuotas: '2000',
                     }
                 }
             },
@@ -570,11 +570,11 @@ export const courses = [
         estado: 'Próximo lanzamiento',
         precio_del_curso: {
             regular: {
-                valor_inscripcion: '1',
+                valor_inscripcion: '2000',
                 saldo: {
                     cuotas: {
-                        cantidad_de_cuotas: '1',
-                        valor_de_cuotas: '1'
+                        cantidad_de_cuotas: '3',
+                        valor_de_cuotas: '2000',
                     }
                 }
             },
@@ -627,11 +627,11 @@ export const courses = [
         estado: 'Próximo lanzamiento',
         precio_del_curso: {
             regular: {
-                valor_inscripcion: '1',
+                valor_inscripcion: '2000',
                 saldo: {
                     cuotas: {
-                        cantidad_de_cuotas: '1',
-                        valor_de_cuotas: '1'
+                        cantidad_de_cuotas: '3',
+                        valor_de_cuotas: '2000',
                     }
                 }
             },

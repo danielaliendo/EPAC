@@ -7,7 +7,8 @@ import Stepper from "./Stepper";
 export default function ResponsiveDialog({ open, handleClose, curso }) {
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
-  
+
+
   return (
     <div>
       <Dialog
@@ -16,7 +17,7 @@ export default function ResponsiveDialog({ open, handleClose, curso }) {
         onClose={handleClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <Stepper curso={curso}/>
+        <Stepper handleClose={handleClose} curso={curso} />
       </Dialog>
     </div>
   );

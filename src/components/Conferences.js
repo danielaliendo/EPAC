@@ -5,7 +5,7 @@ import "./../styles/ConferencesCards.css";
 const ConferencesCards = () => {
     return (
         <div
-            className="cnt containerConferencesCards">
+            className="cnt flxBxClumn containerConferencesCards">
             <div className="flxBxCntr">
                 <div class="cnt-title">
                     <h2 className="title">Conferencias</h2>
@@ -14,8 +14,7 @@ const ConferencesCards = () => {
                 </div>
 
             </div>
-
-            <div className="allConferences">
+            <div className="cnt-content allConferences">
                 {
                     conferences.map((conference, key) =>
                         <div

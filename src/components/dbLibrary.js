@@ -1,7 +1,16 @@
-import imag from "./../images/Library/ManualInstaladorElectricistaCategoriaIIISegundaEdicion.jpg"
-import imgManualAlumbradoPublico from "./../images/Library/Manual alumbrado publico - 2018.png"
 import manual from "./../files/Manual.pdf"
-import manualAlumbradoPublico from "./../files/Manual alumbrado publico - 2018.pdf"
+import imag from "./../images/Library/ManualInstaladorElectricistaCategoriaIIISegundaEdicion.jpg"
+
+import ComprendioDeLeyesTomo1 from "./../files/ComprendioDeLeyesTomo1.pdf"
+import ImgComprendioDeLeyesTomo1 from "./../images/Library/imgComprendioDeLeyesTomo1.png"
+
+import ComprendioDeLeyesTomo2 from "./../files/ComprendioDeLeyesTomo2.pdf"
+import ImgComprendioDeLeyesTomo2 from "./../images/Library/imgComprendioDeLeyesTomo2.png"
+
+import ManualAlumbradoPublico2018 from "./../files/ManualAlumbradoPublicoCordoba2018.pdf"
+import ImgManualAlumbradoPublico2018 from "./../images/Library/imgManualAlumbradoPublicoCordoba2018.png"
+
+
 
 export const books = [
     {
@@ -10,8 +19,18 @@ export const books = [
         srcImg: imag,
     },
     {
-        title: "Manual Alumbrado Público - Córdoba -",
-        href: manualAlumbradoPublico,
-        srcImg: imgManualAlumbradoPublico,
+        title: "Manual Alumbrado Público - 2018",
+        href: ManualAlumbradoPublico2018,
+        srcImg: ImgManualAlumbradoPublico2018,
+    },
+    {
+        title: "Comprendio de Leyes de Energía Eléctrica y su Articulación - Tomo I",
+        href: ComprendioDeLeyesTomo1,
+        srcImg: ImgComprendioDeLeyesTomo1,
+    },
+    {
+        title: "Comprendio de Leyes de Energía Eléctrica y su Articulación - Tomo II",
+        href: ComprendioDeLeyesTomo2,
+        srcImg: ImgComprendioDeLeyesTomo2,
     },
 ]

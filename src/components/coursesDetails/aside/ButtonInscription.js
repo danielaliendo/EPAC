@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 const ButtonInscription = ({ handleClickOpen, curso }) => {
-    console.log(curso)
     const classes = useStyles();
     
     return (
