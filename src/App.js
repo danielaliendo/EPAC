@@ -37,6 +37,7 @@ function App() {
         <Router history={ history }>
           <ScrollToToP />
           <Header />
+          <div>
           <Switch>
             <Route exact path="/">
               <Home />
@@ -75,6 +76,7 @@ function App() {
               <CoursesDetails />
             </Route>
           </Switch>
+          </div>
           <Footer />
         </Router>
       </div>

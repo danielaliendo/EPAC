@@ -2,14 +2,15 @@ import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import imagen from './../../images/bannerNovedades-01.png';
-import imgNotes from './../../images/bannerNovedades-02.png';
-import imgLegislation from './../../images/bannerNovedades-03.png'
+import imagen from './../../images/bannerNovedades-01-01.jpg';
+import imgNotes from './../../images/bannerNovedades-02.jpg';
+import imgLegislation from './../../images/bannerNovedades-03.jpg'
 import { Link } from "react-router-dom";
 
-import { Button, StepLabel } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
 import './../../styles/AutoViewBanner.css';
+import { FeaturedPoster } from './FeaturedPoster';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -82,7 +83,7 @@ const AutoViewBanner = () => {
         enableMouseEvents
       >
         {tutorialSteps.map((step, index) => (
-          <div className="cntSlider" key={step.label}>
+          <div className="cntSlider" key={step.id}>
             {Math.abs(activeStep - index) <= 2 ? (
               <>
                 <img className="img" src={step.imgPath} alt={step.label} />
@@ -96,7 +97,7 @@ const AutoViewBanner = () => {
                         Aprende un oficio de la mano de nuestros mejores profesionales <br />
                       </p>
                     </div>
-                    <idv>
+                    <div className="animate__animated animate__rubberBand buttonsAlert">
                       <Link className={classes.link} to="./Cursos">
                         <Button
                           className={classes.button}
@@ -106,7 +107,8 @@ const AutoViewBanner = () => {
                           Conocé nuestros cursos
                         </Button>
                       </Link>
-                    </idv>
+                      <FeaturedPoster />
+                    </div>
                   </div>}
 
                 {step.id === 'notes' &&
@@ -118,7 +120,7 @@ const AutoViewBanner = () => {
                         En nuestra sección de artículos podrás encontrar información elaborada por nuestro equipo <br />
                       </p>
                     </div>
-                    <idv>
+                    <div className="animate__animated animate__rubberBand">
                       <Link className={classes.link} to="./Articulos">
                         <Button
                           className={classes.button}
@@ -128,18 +130,18 @@ const AutoViewBanner = () => {
                           Ver más
                         </Button>
                       </Link>
-                    </idv>
+                    </div>
                   </div>
                 }
                 {step.id === 'legislation' &&
-                <div className="info">
+                  <div className="info">
                     <div>
                       <h3 className="infoTitle">LEGISLACIÓN VIGENTE</h3>
                       <p className="p">
-                      En esta sección podrás ver y descargar las leyes y reglamentaciones vigentes en Córdoba<br />
+                        En esta sección podrás ver y descargar las leyes y reglamentaciones vigentes en Córdoba<br />
                       </p>
                     </div>
-                    <idv>
+                    <div className="animate__animated animate__rubberBand">
                       <Link className={classes.link} to="./Legislación-y-reglamentaciones">
                         <Button
                           className={classes.button}
@@ -149,7 +151,7 @@ const AutoViewBanner = () => {
                           Ver más
                         </Button>
                       </Link>
-                    </idv>
+                    </div>
                   </div>
                 }
               </>

@@ -5,14 +5,14 @@ import Vision from "./Vision";
 import Objetivo from "./Objetivo";
 import "../styles/principios-corporativos.css"
 import imgObjetivo from "./../images/values/objetive.jpg"
-import imgMission from "./../images/values/mission.jpg"
+import imgMission from "./../images/values/mission.JPG"
 import imgView from "./../images/values/view.jpg"
 
 const PrincipiosCorporativos = () => {
     return (
         <div className="cnt flxBxClumn">
             <div class="cnt-title">
-                <h2 className="title">Principios corporativos</h2>
+                <h2 className="title">Principios y valores</h2>
                 <div class="border">
                 </div>
             </div>

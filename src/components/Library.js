@@ -29,8 +29,10 @@ const Library = () => {
                     books.map((book, key) =>
                         <div className="book" key={key}>
                             <img className="bookImage" src={book.srcImg} width="104" height="142" />
-                            <div>
-                                <h4 className="bookTitle">{book.title}</h4>
+                            <div
+                            style={{padding: 10}}
+                            >
+                                <h4 className="bookTitle">Libro: "{book.title}"</h4>
                                 <Button href={book.href} variant="outlined" color="primary" download>
                                     Descargar
                                 </Button>

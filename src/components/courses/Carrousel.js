@@ -232,8 +232,8 @@ const Carrousel = () => {
                                     </button>
                                 </CardActions>
                             </Card>
+                        {curso.id === "instalador-electricista-categoría-III" && <Chip className={`${classes.chipState} ${classes.chipOtherAuthor}`} size="small" label="Autorizado por Ersep" />}
                         </Slide>
-                        {curso.titulo === "Instalador electricista categoría III" && <Chip className={`${classes.chipState} ${classes.chipOtherAuthor}`} size="small" label="Autorizado por Ersep" />}
                     </>
 
                 )}

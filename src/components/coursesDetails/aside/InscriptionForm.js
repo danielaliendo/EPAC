@@ -96,7 +96,7 @@ export default function UploadButtons() {
   const { curso } = state;
 
   return (
-    <form className={classes.form} id="myForm" action="https://formsubmit.co/danielaliendo98@gmail.com" method = "POST" enctype="multipart/form-data" >
+    <form className={classes.form} id="myForm" action="https://formsubmit.co/epacsocios@gmail.com" method = "POST" enctype="multipart/form-data" >
 
       <BootstrapTooltip title="Ingresa tu nombre completo (como figura en tu documento nacional de identidad)" placement="right">
         <Input className={classes.inputForm} name="Nombre" type="text" placeholder="Nombre" required inputProps={{ 'aria-label': 'description' }} />

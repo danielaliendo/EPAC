@@ -5,37 +5,33 @@ export const courses = [
         img: Imagen,
         titulo: 'Auxiliar electricista domiciliario',
         destinatarios: 'Este curso está destinado a todos los interesados que quieran aprender en forma práctica electricidad domiciliaria y/o ampliar sus conocimientos prácticos',
-        estado: 'Finalizado',
+        estado: 'Próximo lanzamiento',
         precio_del_curso: {
             regular: {
-                valor_inscripcion: '1.500',
+                valor_inscripcion: '2.000',
                 saldo: {
                     cuotas: {
                         cantidad_de_cuotas: '2',
-                        valor_de_cuotas: '1.500'
+                        valor_de_cuotas: '2.000'
                     }
                 }
             },
         },
         duracion_del_curso: {
             cantidad_de_clases: '12 clases',
-            inicio_del_curso: '10/06/2020',
-            fin_del_curso: '12/08/2020',
-            fin_inscripciones: '09/06/2020'
+            inicio_del_curso: '23/03/2021',
+            fin_del_curso: '23/05/2021',
+            fin_inscripciones: '22/03/2021'
         },
         clases: {
             dias_y_horario: {
                 default: {
-                    dias: ['miércoles'],
-                    horarios: ['18:30 a 20:30hs']
-                },
-                opcional: {
-                    dias: ['sábados'],
+                    dias: ['Martes'],
                     horarios: ['18:30 a 20:30hs']
                 },
             },
-            modalidad: 'Virtual',
-            lugar_de_cursado: 'Zoom'
+            modalidad: 'Presencial',
+            lugar_de_cursado: 'Sede EPAC: Diagonal ICA N° 1538 – B° Talleres Oeste',
         },
         docente: 'Prof. Mgtr. Pedraza Dante',
         temario: [
@@ -500,6 +496,76 @@ export const courses = [
     },
     {
         img: Imagen,
+        titulo: 'Acometidas y puntos de conexión',
+        destinatarios: 'Este curso está dirigido a instaladores de todas las categorías que necesiten ampliar sus conocimientos en las diversas configuraciones de puntos de conexión y medición de baja tensión, tanto monofásicos, trifásicos, gran cliente o multimedidor; su marco legal y técnico y nociones de facturación y generación distribuida.',
+        estado: 'Próximo lanzamiento',
+        precio_del_curso: {
+            regular: {
+                valor_inscripcion: '2000',
+                saldo: {
+                    cuotas: {
+                        cantidad_de_cuotas: '3',
+                        valor_de_cuotas: '2000',
+                    }
+                }
+            },
+        },
+        duracion_del_curso: {
+            cantidad_de_clases: '',
+            inicio_del_curso: '',
+            fin_del_curso: '',
+            fin_inscripciones: ''
+
+        },
+        clases: {
+            dias_y_horario: {
+                default: {
+                    dias: [],
+                    horarios: []
+                },
+                opcional: {
+                    dias: [],
+                    horarios: []  
+                },
+            },
+            modalidad: '',
+            lugar_de_cursado: ''
+        },
+        docente: '',
+        temario: [
+            {
+                titulo: 'Módulo I',
+                contenido: ['El punto de conexión – marco legal y técnico – AEA 95150 – resoluciones'],
+            },
+            {
+                titulo: 'Módulo II',
+                contenido: ['Materiales – componentes del punto de conexión – Normas IRAM'],
+            },
+            {
+                titulo: 'Módulo III',
+                contenido: ['Tipos constructivos I: ET21 – Tipos constructivos T1, T2 y T3'],
+            },
+            {
+                titulo: 'Módulo IV',
+                contenido: ['Tipos constructivos II: Multimedidor'],
+            },
+            {
+                titulo: 'Módulo V',
+                contenido: ['Tipos constructivos II: Multimedidor'],
+            },
+            {
+                titulo: 'Módulo VI',
+                contenido: ['Medidores: los diversos tipos de medidores unidireccional, bidireccional y su lectura, tele medición'],
+            },
+            {
+                titulo: 'Módulo VII',
+                contenido: ['Facturación: cuadro tarifario, su interpretación y lectura'],
+            },
+        ],
+        id: 'instrumental-y-mediciones-eléctricas',
+    },
+    {
+        img: Imagen,
         titulo: 'Puesta a tierra y medición atmosférica',
         destinatarios: 'Este curso está dirigido a los instaladores electricistas de todas las categorías y profesiones afines que necesitan realizar mediciones y sus respectivas certificaciones.',
         estado: 'Próximo lanzamiento',
@@ -566,7 +632,7 @@ export const courses = [
     {
         img: Imagen,
         titulo: 'Electrónica industrial',
-        destinatarios: '',
+        destinatarios: 'Destinado a todos los instaladores que necesitan ampliar conocimientos en el area industrial',
         estado: 'Próximo lanzamiento',
         precio_del_curso: {
             regular: {
@@ -603,20 +669,33 @@ export const courses = [
         temario: [
             {
                 titulo: 'Módulo I',
-                contenido: [],
+                contenido: ['Semiconductores. Diodo rectificadores. Transistores (bipolar, IGBT, Fet, etc). Tiristor, triac, GTO, diodos zener. Diodo led'],
             },
             {
                 titulo: 'Módulo II',
-                contenido: [],
+                contenido: ['Transformadores, distintos tipos y aplicaciones, bobinas y filtro industriales'],
             },
             {
                 titulo: 'Módulo III',
-                contenido: [],
+                contenido: ['Rectificador industrial, filtros en fuemtes, fuentes de alimentacion, fuentes conmutadas, cargadores de baterias'],
             },
             {
                 titulo: 'Módulo IV',
-                contenido: [],
+                contenido: ['Dispositivos fotoeléctricos, fotoemisores, fotoconductores, fotovoltaicos, fotomagneticos, láser, sensores resistivos inductivos capacitivos'],
             },
+            {
+                titulo: 'Módulo V',
+                contenido: ['Inversores  tipos usos, forma de ondas, parametrizacion y seleccion'],
+            },
+            {
+                titulo: 'Módulo VI',
+                contenido: ['Arrancadores de motores, variadores de velocidad, clasificacion y tipos (escalares, vectoriales, realimentados'],
+            },
+            {
+                titulo: 'Módulo VII',
+                contenido: ['Mediciones con distintos instrumentos de uso industrial'],
+            },
+
         ],
         id: 'electrónica-industrial',
     },
@@ -661,7 +740,7 @@ export const courses = [
         temario: [
             {
                 titulo: 'Módulo I',
-                contenido: [],
+                contenido: ['Segun necesidad de la empresa para mantenimiento, produccion, etc.'],
             },
             {
                 titulo: 'Módulo II',
@@ -678,4 +757,5 @@ export const courses = [
         ],
         id: 'capacitación-a-empresas',
     },
+
 ]

@@ -28,7 +28,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <form className={classes.root} autoComplete="off" action="https://formsubmit.co/danielaliendo98@gmail.com" method="POST">
+      <form className={classes.root} autoComplete="off" action="https://formsubmit.co/epacsocios@gmail.com" method="POST">
         <TextField className={classes.input} name="Nombre" type="text" size="small" label="Nombre" variant="outlined" required/>
         <TextField className={classes.input} name="Apellido" type="text" size="small" label="Apellido" variant="outlined" required/>
         <TextField className={classes.input} name="Email" type="email" size="small" label="Email" variant="outlined" required/>

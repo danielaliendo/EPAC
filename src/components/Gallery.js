@@ -17,7 +17,6 @@ export const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap',
         alignItems: "center",
         justifyContent: 'flex-start',
-        // backgroundColor: 'white',
         borderRadius: '4px'
     },
     gridList: {
@@ -57,183 +56,35 @@ export default function TitlebarGridList() {
                 <h2>EPAC a través del tiempo</h2>
                 <div className="border" />
             </div>
-            <GridList cellHeight={180} className={classes.gridList}>
-                <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Año 2012</ListSubheader>
-                </GridListTile>
-                {photoGallery[2012].map((photo, key) =>
-
-                    <GridListTile key={key} className={classes.gridCard}>
-                        <img className="imgGridList" src={photo.img} alt={photo.title} />
-
+            {
+                photoGallery.sort((a, b) => b.year - a.year).map((date, key) => (
+                    <GridList key={key} cellHeight={180} className={classes.gridList}>
+                        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+                            <ListSubheader component="div">Año {date.year === 2020 || date.year === 2021 ? `${date.year} - Examen ERSeP` : date.year }</ListSubheader>
+                        </GridListTile>
                         {
-                            <GridListTileBar
-                                title={photo.title && photo.title}
-                                subtitle={photo.author && <span>{photo.author}</span>}
-                                actionIcon={
-                                    <IconButton aria-label={`info about ${photo.title}`} className={classes.icon} onClick={() => handleClickOpen(photo.img)} photo={photo.img}>
-                                        <InfoIcon />
-                                    </IconButton>
-                                }
-                            />}
-                    </GridListTile>
-                )}
-            </GridList>
+                            date.images.map((photo, key) =>
+
+                                <GridListTile key={key} className={classes.gridCard}>
+                                    <img className="imgGridList" src={photo} alt="img" />
+
+                                    <GridListTileBar
+                                        title={photo.title && photo.title}
+                                        subtitle={photo.author && <span>{photo.author}</span>}
+                                        actionIcon={
+                                            <IconButton aria-label={`info about ${photo.title}`} className={classes.icon} onClick={() => handleClickOpen(photo)} photo={photo}>
+                                                <InfoIcon />
+                                            </IconButton>
+                                        }
+                                    />
+                                </GridListTile>
+                            )}
+                    </GridList>
+                ))
+
+            }
             <GalleryModal handleClose={handleClose} open={open} image={image} />
 
-            <GridList cellHeight={180} className={classes.gridList}>
-                <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Año 2013</ListSubheader>
-                </GridListTile>
-                {photoGallery[2013].map((photo, key) =>
-                    <GridListTile key={key} className={classes.gridCard}>
-                        <img className="imgGridList" src={photo.img} alt={photo.title} />
-
-                        {
-                            <GridListTileBar
-                                title={photo.title && photo.title}
-                                subtitle={photo.author && <span>{photo.author}</span>}
-                                actionIcon={
-                                    <IconButton aria-label={`info about ${photo.title}`} className={classes.icon} onClick={() => handleClickOpen(photo.img)} photo={photo.img}>
-                                        <InfoIcon />
-                                    </IconButton>
-                                }
-                            />}
-                    </GridListTile>
-                )}
-            </GridList>
-
-            <GridList cellHeight={180} className={classes.gridList}>
-                <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Año 2014</ListSubheader>
-                </GridListTile>
-                {photoGallery[2014].map((photo, key) =>
-                    <GridListTile key={key} className={classes.gridCard}>
-                        <img className="imgGridList" src={photo.img} alt={photo.title} />
-
-                        {
-                            <GridListTileBar
-                                title={photo.title && photo.title}
-                                subtitle={photo.author && <span>{photo.author}</span>}
-                                actionIcon={
-                                    <IconButton aria-label={`info about ${photo.title}`} className={classes.icon} onClick={() => handleClickOpen(photo.img)} photo={photo.img}>
-                                        <InfoIcon />
-                                    </IconButton>
-                                }
-                            />}
-                    </GridListTile>
-                )}
-            </GridList>
-
-            <GridList cellHeight={180} className={classes.gridList}>
-                <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Año 2015</ListSubheader>
-                </GridListTile>
-                {photoGallery[2015].map((photo, key) =>
-                    <GridListTile key={key} className={classes.gridCard}>
-                        <img className="imgGridList" src={photo.img} alt={photo.title} />
-
-                        {
-                            <GridListTileBar
-                                title={photo.title && photo.title}
-                                subtitle={photo.author && <span>{photo.author}</span>}
-                                actionIcon={
-                                    <IconButton aria-label={`info about ${photo.title}`} className={classes.icon} onClick={() => handleClickOpen(photo.img)} photo={photo.img}>
-                                        <InfoIcon />
-                                    </IconButton>
-                                }
-                            />}
-                    </GridListTile>
-                )}
-            </GridList>
-
-            <GridList cellHeight={180} className={classes.gridList}>
-                <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Año 2016</ListSubheader>
-                </GridListTile>
-                {photoGallery[2016].map((photo, key) =>
-                    <GridListTile key={key} className={classes.gridCard}>
-                        <img className="imgGridList" src={photo.img} alt={photo.title} />
-
-                        {
-                            <GridListTileBar
-                                title={photo.title && photo.title}
-                                subtitle={photo.author && <span>{photo.author}</span>}
-                                actionIcon={
-                                    <IconButton aria-label={`info about ${photo.title}`} className={classes.icon} onClick={() => handleClickOpen(photo.img)} photo={photo.img}>
-                                        <InfoIcon />
-                                    </IconButton>
-                                }
-                            />}
-                    </GridListTile>
-                )}
-            </GridList>
-
-            <GridList cellHeight={180} className={classes.gridList}>
-                <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Año 2017</ListSubheader>
-                </GridListTile>
-                {photoGallery[2017].map((photo, key) =>
-                    <GridListTile key={key} className={classes.gridCard}>
-                        <img className="imgGridList" src={photo.img} alt={photo.title} />
-
-                        {
-                            <GridListTileBar
-                                title={photo.title && photo.title}
-                                subtitle={photo.author && <span>{photo.author}</span>}
-                                actionIcon={
-                                    <IconButton aria-label={`info about ${photo.title}`} className={classes.icon} onClick={() => handleClickOpen(photo.img)} photo={photo.img}>
-                                        <InfoIcon />
-                                    </IconButton>
-                                }
-                            />}
-                    </GridListTile>
-                )}
-            </GridList>
-
-            <GridList cellHeight={180} className={classes.gridList}>
-                <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Año 2018</ListSubheader>
-                </GridListTile>
-                {photoGallery[2018].map((photo, key) =>
-                    <GridListTile key={key} className={classes.gridCard}>
-                        <img className="imgGridList" src={photo.img} alt={photo.title} />
-
-                        {
-                            <GridListTileBar
-                                title={photo.title && photo.title}
-                                subtitle={photo.author && <span>{photo.author}</span>}
-                                actionIcon={
-                                    <IconButton aria-label={`info about ${photo.title}`} className={classes.icon} onClick={() => handleClickOpen(photo.img)} photo={photo.img}>
-                                        <InfoIcon />
-                                    </IconButton>
-                                }
-                            />}
-                    </GridListTile>
-                )}
-            </GridList>
-
-            <GridList cellHeight={180} className={classes.gridList}>
-                <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Año 2019</ListSubheader>
-                </GridListTile>
-                {photoGallery[2019].map((photo, key) =>
-                    <GridListTile key={key} className={classes.gridCard}>
-                        <img className="imgGridList" src={photo.img} alt={photo.title} />
-
-                        {
-                            <GridListTileBar
-                                title={photo.title && photo.title}
-                                subtitle={photo.author && <span>{photo.author}</span>}
-                                actionIcon={
-                                    <IconButton aria-label={`info about ${photo.title}`} className={classes.icon} onClick={() => handleClickOpen(photo.img)} photo={photo.img}>
-                                        <InfoIcon />
-                                    </IconButton>
-                                }
-                            />}
-                    </GridListTile>
-                )}
-            </GridList>
         </div>
     );
 }

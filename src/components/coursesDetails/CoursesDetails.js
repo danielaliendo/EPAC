@@ -10,7 +10,6 @@ import GeneralInformation from './GeneralInformation';
 
 const CoursesDetails = () => {
     
-    console.log(useLocation())
     const { state } = useLocation()
     const { curso } = state;
 
